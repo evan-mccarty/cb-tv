@@ -1,0 +1,108 @@
+body {
+  background-color: #afb9c9;
+  overflow: hidden;
+}
+
+h1 {
+    color: #043a91;
+    font: bold 25pt Arial;
+    text-align: center;
+    margin-left: 5% auto;
+    margin-right: 5% auto;
+    left: 66vw;
+    margin-top: 0vh;
+    top: 2vh;
+}
+
+h2 {
+    color: #043a91;
+    font: 30pt Arial;
+    text-align: center;
+}
+
+h3{
+    font: 20pt Arial;
+    color: white;
+    background-color: #043a91;
+    padding: .5vmin;
+}
+
+p{
+    font: 1.5vw arial;
+    text-align: center;
+    
+}
+
+button{
+    font: 1vw arial;
+    width: 14.5vw;
+    text-align: center;
+}
+
+.button-enabled{
+        color: red;
+    }
+
+    .button-disabled{
+        color: black;
+    }
+
+.restrictions{
+    background-color: #d3dded;
+    margin-top: 5vh;
+}
+
+#header{
+    background-color: #d3dded;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.img_normalval{
+    width: 3.8vw;
+    margin-top: -3.5vh;
+    margin-left: 1.5vh;
+}
+
+/*#green, #yellow, #red, #closed{
+    width: 3.8vw;
+    margin-top: -3.5vh;
+    margin-left: 1.5vh;
+}*/
+
+#flag{
+    width: 6vw;
+    margin-top: -19vh;
+    height: 15vh;
+    margin-left: 26vw;
+    background-color: #d3dded;
+}
+
+#program{
+    width: 25vw;
+    height: 15vh;
+    background-color: #d3dded;
+}
+
+#customrs{
+    top: 50vh;
+    left: 35vw;
+    width: 30vw;
+}
+
+#controls{
+    margin-left: 75vw;
+    margin-top: -10vh;
+}
+
+#logout{
+    margin-top: -5vh;
+    margin-left: 90vw;
+}
+
+#header h1{
+    text-align: center;
+    background-color: #d3dded;
+    width: 200vw;
+    margin-left: -30vw;
+}

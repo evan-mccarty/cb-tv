@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Front Office Display</title>
+    <script type='text/javascript' src='restrictions.js'></script>
+    <style>
+body {
+    background-color: white;
+    overflow: hidden;
+
+}
+
+h1 {
+    color: #043a91;
+    font: bold 35pt Arial;
+    text-align: center;
+    position: fixed;
+}
+
+h2 {
+    color: #043a91;
+    font: 30pt Arial;
+    text-align: center;
+}
+
+h3 {
+    color: #043a91;
+    font: bold 25pt Arial;
+    text-align: center;
+    position: fixed;
+}
+
+p {
+    color: #fff;
+    font-family: Arial;
+    font-size: 20pt;
+    text-align: center;
+    background-color: #043a91;
+}
+
+.content {
+    background-image: url(images/background.jpg);
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    left: 0;
+    top: 0;
+    position: fixed;
+}
+
+.header{
+    position: fixed;
+    margin-left: 35vw;
+    width: 65vw;
+}
+
+.times {
+    position: fixed;
+    margin-left: 60vw;
+    top: 25vh;
+}
+
+.classes {
+    position: fixed;
+    margin-left: 0vw;
+    margin-top: 0vh;
+}
+
+.teams {
+    position: fixed;
+    margin-left: 40vw;
+    top: 35vh;
+}
+
+#clock {
+    color: #043a91;
+    font: bold 60pt Arial;
+    text-align: center;
+}
+
+.img_normal{
+    height: 20vh;
+    margin-left: 2vw;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+display: none;
+}
+
+</style>
+</head>
+<body onload="startTime()">
+    <div class="slideshow-container">
+        <div class="mySlides fade" id="mainpanel" data-slide-time="30000">
+            <div class="content">
+                    <div class="header">
+                        <h1 style="top:0vh; width:65vw; margin-right:5vw;">Welcome to Community Boating!</h1>
+                        <h3 style="color: #b6ff00; background-color:#043a91; top:10vh; margin-left:5vw; width:55vw;">Junior Program</h3>
+                        <h3 style="top:15vh; margin-left:5vw; width:55vw;"><strong>** NO ADULTS ON THE DOCK PLEASE! **</strong></h3>
+                    </div>
+                    <div class="times">
+                        <script src="time.js"></script><div id="clock"></div>
+                    </div>
+    
+                    <div class="classes">
+                        <iframe src="http://info.community-boating.org/jp-class-instances?startDate=06%2F12%2F2017" style="border-width: 4; border-color: LightGrey; border-style: solid; -ms-zoom: 0.5; -moz-transform: scale(0.5); -moz-transform-origin: 0 0; -o-transform: scale(0.5); -o-transform-origin: 0 0; -webkit-transform: scale(0.5); -webkit-transform-origin: 0 0;" height="1500" width="900" ></iframe>
+                    </div>
+                    <div class="teams">
+                        <h2>Team Standings: COMING SOON!</h2>
+                        <iframe src=""></iframe>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="mySlides fade" id="adpanel" data-slide-time="200">
+        <img style="position: fixed; margin-left: 5% auto; margin-right: 5% auto; left: 0; right: 0; height: 100vh; overflow: hidden; top: 0;" src="https://docs.google.com/drawings/d/12USQ40NNY4JpjlSGLP92lxmjrdhFLlVL4U0Qpo6Lv2g/pub?w=2009&amp;h=1160">
+    </div>
+</div>
+<script type="text/javascript">
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 10000); // Change image every 10 seconds
+}
+</script>
+    
+</body>
+</html>

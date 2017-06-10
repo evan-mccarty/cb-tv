@@ -1,0 +1,99 @@
+body {
+  background-color: #91bbff;
+}
+
+h1 {
+    color: #043a91;
+    font: bold 25pt Arial;
+    text-align: center;
+    position: fixed;
+    margin-left: 5% auto;
+    margin-right: 5% auto;
+    left: 66vw;
+    margin-top: 0vh;
+    top: 2vh;
+}
+
+h2 {
+    color: #043a91;
+    font: 30pt Arial;
+    text-align: center;
+}
+
+h3{
+    font: 20pt Arial;
+    color: white;
+    background-color: #043a91;
+    padding: .5vmin;
+}
+
+#green, #yellow, #red, #closed{
+    width: 5vw;
+    position: absolute;
+    top: 10vh;
+    left: 26vw;
+}
+
+button{
+    font: 1vw arial;
+    width: 14.5vw;
+    text-align: center;
+}
+
+#program{
+    position: absolute;
+    width: 20vw;
+    left: 4vw;
+    top: 5vh;
+}
+
+#redrs{
+    position: absolute;
+    top: 20vh;
+    left: 4vw;
+    width: 30vw;
+}
+
+#yellowrs{
+    position: absolute;
+    top: 50vh;
+    left: 4vw;
+    width: 30vw;
+}
+
+#otherrs{
+    position: absolute;
+    top: 20vh;
+    left: 66vw;
+    width: 30vw;
+}
+
+#weatherrs{
+    position: absolute;
+    top: 20vh;
+    left: 35vw;
+    width: 30vw;
+}
+
+#customrs{
+    position: absolute;
+    top: 50vh;
+    left: 35vw;
+    width: 30vw;
+}
+
+#controls{
+    position: absolute;
+    top: 54vh;
+    left: 66vw;
+    width: 30vw;
+    height: 15vh;
+    background-color: #043a91;
+}
+
+#logout{
+    position: absolute;
+    top: 64vh;
+    left: 90vw;
+    width: 30vw;
+}
