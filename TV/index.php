@@ -7,6 +7,28 @@
     <script type='text/javascript' src='restrictions.js'></script>
     <script type="text/javascript" src='slides.js'></script>
     <script src="flags.js" type="text/javascript"></script>
+<script>
+window.addEventListener("load", function(){
+setInterval(function(){
+getProgram();
+}, 5000);
+});
+var getProgram = function(){
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    if(this.responseText == "ADULT"){
+}else if(this.responseText == "JUNIOR"){
+  window.location.href = "jpdisplay.html";
+  }else{
+console.log("Error in response" + this.responseText);
+}
+  }
+};
+xhttp.open("GET", "program.php", true);
+xhttp.send();
+}
+</script>
     <style>
 
     /* Slideshow container
