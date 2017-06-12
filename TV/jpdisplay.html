@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Front Office Display</title>
     <script type='text/javascript' src='restrictions.js'></script>
+    <script type="text/javascript" src='slides.js'></script>
     <style>
 body {
     background-color: white;
@@ -122,7 +123,7 @@ xhttp.send();
 </head>
 <body onload="startTime()">
     <div class="slideshow-container">
-        <div class="mySlides fade" id="mainpanel" data-slide-time="30000">
+        <div class="mySlides fade" id="mainpanel" data-slide-time="30000" data-slide-index="0">
             <div class="content">
                     <div class="header">
                         <h1 style="top:0vh; width:50vw; margin-right:5vw;">Welcome to Community Boating!</h1>
@@ -143,26 +144,9 @@ xhttp.send();
             </div>
         </div>
     </div>
-    <div class="mySlides fade" id="adpanel" data-slide-time="200">
+    <div class="mySlides fade" id="adpanel" data-slide-time="200" data-slide-index="1">
         <img style="position: fixed; margin-left: 5% auto; margin-right: 5% auto; left: 0; right: 0; height: 100vh; overflow: hidden; top: 0;" src="https://docs.google.com/drawings/d/12USQ40NNY4JpjlSGLP92lxmjrdhFLlVL4U0Qpo6Lv2g/pub?w=2009&amp;h=1160">
     </div>
-</div>
-<script type="text/javascript">
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none"; 
-    }
-    slideIndex++;
-    if (slideIndex> slides.length) {slideIndex = 1} 
-    slides[slideIndex-1].style.display = "block"; 
-    setTimeout(showSlides, 10000); // Change image every 10 seconds
-}
-</script>
-    
+</div>    
 </body>
 </html>
