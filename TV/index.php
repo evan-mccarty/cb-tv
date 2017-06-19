@@ -15,14 +15,14 @@ getProgram();
 });
 var getProgram = function(){
 var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {
-  if (this.readyState == 4 && this.status == 200) {
-    if(this.responseText == "ADULT"){
-}else if(this.responseText == "JUNIOR"){
-  window.location.href = "jpdisplay.html";
-  }else{
-console.log("Error in response" + this.responseText);
-}
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        if(this.responseText == "ADULT"){
+    }else if(this.responseText == "JUNIOR"){
+      window.location.href = "jpdisplay.html";
+      }else{
+    console.log("Error in response" + this.responseText);
+    }
   }
 };
 xhttp.open("GET", "program.php", true);
@@ -68,7 +68,7 @@ xhttp.send();
                     </div>
 
                     <div class="notes" style="text">
-                        <script src="sunset.js"></script>
+                        <!--<script src="sunset.js"></script>-->
                         <div class="restrictions">
                             <div id="restrictions-state-settings" class="restrictions-show" data-restrictions-type="settings">
                                 <div class="button-holder"><span>
@@ -105,7 +105,7 @@ xhttp.send();
                             </div>
                         </div>
                     </div>
-                    <script src="restrictions.js" type="text/javascript"></script>
+                    <!--<script src="restrictions.js" type="text/javascript"></script>-->
         
                     <div class="supporters" style="margin-left: 2vw; margin-top: 80vh;">
                         <img style="height: 10vw;" src="images/logo.png">
@@ -123,7 +123,7 @@ xhttp.send();
         <div class="mySlides fade" id="socialpanel" data-slide-time="6000" data-slide-index="1,3">
             <div class="container">
                 <div class="infobar">
-                    <!--<script src="https://portal2.community-boating.org/pls/apex/CBI_PROD.FLAG_JS" type="text/javascript"></script>-->
+                    <script src="https://portal2.community-boating.org/pls/apex/CBI_PROD.FLAG_JS" type="text/javascript"></script>
                     <script src="infobox.js" type="text/javascript"></script>
                     <img class="flag_img img_ib"></img>
                     <div id="ibtimehead">
@@ -147,6 +147,5 @@ xhttp.send();
             </div>
         </div>
     </div>
-
 </body>
 </html>
