@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" http-equiv="refresh" content="76000" >
+    <meta charset="utf-8" />
+    <!--<meta charset="utf-8" http-equiv="refresh" content="70" >-->
     <title>Front Office Display</title>
     <script type='text/javascript' src='restrictions.js'></script>
     <script type="text/javascript" src='slides.js'></script>
@@ -66,7 +67,7 @@ p {
 .classes {
     position: fixed;
     margin-left: 0vw;
-    margin-top: 0vh;
+    margin-top: -30vh;
 }
 
 .teams {
@@ -131,8 +132,32 @@ xhttp.send();
                         <h3 style="color: #b6ff00; background-color:#043a91; top:10vh; margin-left:5vw; width:40vw;">Junior Program</h3>
                         <h3 style="top:15vh; margin-left:5vw; width:40vw;"><strong>** NO ADULTS ON THE DOCK PLEASE! **</strong></h3>
                     </div>
+                    
+                    <script type="text/javascript">
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    h = formatTime(h);
+    m = checkTime(m);
+    document.getElementById('clock').innerHTML = h + ":" + m;
+    var t = setTimeout(startTime, 500);
+}
+
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};   //add zero in front of numbers < 10
+    return i;
+}
+
+function formatTime(i) {
+    if (i > 12) {i = i - 12};
+    if (i == 0) {i = 12};
+    return i;
+}
+                    </script>
+                    
                     <div class="times">
-                        <script src="time.js"></script><div id="clock"></div>
+                        <div id="clock"></div>
                     </div>
     
                     <div class="classes">
