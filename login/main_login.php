@@ -10,7 +10,7 @@ if (isset($_SESSION['username'])) {
     <meta charset="utf-8">
     <title>Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../style.css" rel="stylesheet" media="screen">
+    <!--<link href="../style.css" rel="stylesheet" media="screen">-->
     <style>
 h1{
     position: fixed;
@@ -73,8 +73,7 @@ pre{
 <pre>
             
             
-            NOTE: As of 5/09/17 this application controls the front office display            
-            Login is same as DB.                
+    NOTE: This is a development environment version and does not control the TV.                
             
             
         </pre>

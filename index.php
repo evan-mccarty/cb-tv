@@ -22,6 +22,7 @@ var xhttp = new XMLHttpRequest();
       window.location.href = "jpdisplay.html";
       }else{
     console.log("Error in response" + this.responseText);
+    
     }
   }
 };
